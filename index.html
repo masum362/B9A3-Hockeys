@@ -17,19 +17,102 @@
     <!-- custom tailwind -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                "theme":"#FF4240"
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        "theme": "#FF4240"
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <style>
+        p{
+            font-weight: 500 !important;
+        }
+    </style>
 
 </head>
 
-<body>
+<body class="max-w-screen-2xl m-auto px-2 md:px-20 flex flex-col gap-20">
+
+    <header class="flex flex-col gap-12">
+        <div class="navbar bg-base-100 mt-6 items-center">
+            <div class="navbar-start  justify-start p-0 gap-2 pl-0">
+                <div class="dropdown lg:hidden  ">
+                    <div tabindex="0" role="button" class="  p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-theme">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-3xl lg:text-5xl font-bold cursor-pointer ">Hockey<span class="text-theme">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-theme">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-3">
+                <button class=" btn-circle hidden lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost bg-theme text-white px-8 text-lg">
+                    Get Ticket
+                </button>
+            </div>
+        </div>
+        <div class="relative flex flex-col gap-4">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 left-1 bottom-1 lg:left-5 lg:bottom-5 ">
+                        <a href="#slide3" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
+                        <a href="#slide2" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full eve">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 left-1 bottom-1 lg:left-5 lg:bottom-5 ">
+                        <a href="#slide1" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
+                        <a href="#slide3" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 left-1 bottom-1 lg:left-5 lg:bottom-5 ">
+                        <a href="#slide2" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
+                        <a href="#slide1" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="max-w-[30rem] bg-black text-white rounded-lg px-4 py-6 lg:absolute bottom-6 right-6">
+                <h1 class="text-2xl font-semibold ">Meet all the heroes from the field</h1>
+                <p class="text-[#ffffff99]">Embark on a journey to meet all the heroes from the field on our hockey website</p>
+            </div>
+        </div>
+    </header>
 
 </body>
 
