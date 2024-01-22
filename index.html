@@ -20,14 +20,15 @@
             theme: {
                 extend: {
                     colors: {
-                        "theme": "#FF4240"
+                        "theme": "#FF4240",
+                        "black-title":"#131318"
                     }
                 }
             }
         }
     </script>
     <style>
-        p{
+        p {
             font-weight: 500 !important;
         }
     </style>
@@ -56,7 +57,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="text-3xl lg:text-5xl font-bold cursor-pointer ">Hockey<span class="text-theme">’</span>s</a>
+                <a class="text-3xl lg:text-5xl font-bold cursor-pointer text-black-title">Hockey<span class="text-theme">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
 
@@ -86,33 +87,47 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full" />
                     <div class="absolute flex gap-4 transform -translate-y-1/2 left-1 bottom-1 lg:left-5 lg:bottom-5 ">
-                        <a href="#slide3" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
-                        <a href="#slide2" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
+                        <a href="#slide3"
+                            class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
+                        <a href="#slide2"
+                            class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full eve">
                     <img src="./Images/1.png" class="w-full" />
                     <div class="absolute flex gap-4 transform -translate-y-1/2 left-1 bottom-1 lg:left-5 lg:bottom-5 ">
-                        <a href="#slide1" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
-                        <a href="#slide3" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
+                        <a href="#slide1"
+                            class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
+                        <a href="#slide3"
+                            class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full" />
                     <div class="absolute flex gap-4 transform -translate-y-1/2 left-1 bottom-1 lg:left-5 lg:bottom-5 ">
-                        <a href="#slide2" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
-                        <a href="#slide1" class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
+                        <a href="#slide2"
+                            class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❮</a>
+                        <a href="#slide1"
+                            class="btn bg-black text-white hover:bg-gray-900 hover:text-white btn-circle">❯</a>
                     </div>
                 </div>
-    
+
             </div>
 
-            <div class="max-w-[30rem] bg-black text-white rounded-lg px-4 py-6 lg:absolute bottom-6 right-6">
+            <div class="lg:max-w-[30rem] bg-black text-white rounded-lg px-4 py-6 lg:absolute bottom-6 right-6">
                 <h1 class="text-2xl font-semibold ">Meet all the heroes from the field</h1>
-                <p class="text-[#ffffff99]">Embark on a journey to meet all the heroes from the field on our hockey website</p>
+                <p class="text-[#ffffff99]">Embark on a journey to meet all the heroes from the field on our hockey
+                    website</p>
             </div>
         </div>
     </header>
+    <main>
+        <section class="border-t-2 border-b-2 border-dashed border-[#13131833] flex flex-col gap-4 items-center justify-center text-center py-8">
+            <h1 class="text-2xl lg:text-3xl font-bold text-black-title">Professional Hockeys Club</h1>
+            <p class="text-[#13131899] lg:max-w-[35rem]">Explore our dynamic platform to access real-time updates, live scores, and comprehensive statistics from
+                major professional hockey leagues around the globe.</p>
+        </section>
+    </main>
 
 </body>
 
