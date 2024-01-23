@@ -43,9 +43,9 @@
 
 </head>
 
-<body class="max-w-screen-2xl m-auto px-2 md:px-20 flex flex-col gap-20">
+<body class="max-w-screen-2xl m-auto  flex flex-col gap-20">
 
-    <header class="flex flex-col gap-12">
+    <header class="flex flex-col gap-12 md:px-20 px-2 ">
         <div class="navbar bg-base-100 mt-6 items-center">
             <div class="navbar-start  justify-start p-0 gap-2 pl-0">
                 <div class="dropdown lg:hidden  ">
@@ -131,7 +131,7 @@
         </div>
     </header>
 
-    <main class="flex flex-col gap-20">
+    <main class="flex flex-col gap-20 md:px-20 px-2 ">
         <section
             class="border-t-2 border-b-2 border-dashed border-[#13131833] flex flex-col gap-4 items-center justify-center text-center py-8">
             <h1 class="text-2xl lg:text-3xl font-bold text-black-title">Professional Hockeys Club</h1>
@@ -574,23 +574,33 @@
                 <div class="flex flex-col lg:grid grid-cols-2 gap-6  p-2 lg:w-full w-full">
                     <div class="flex flex-col gap-4">
                         <label class="font-bold text-black-title text-lg" for="name">Your Name</label>
-                        <input type="text" name="name" id="name" class="px-2 py-3 bg-[#13131807] w-full  rounded-lg outline-theme" placeholder="Enter your full name">
+                        <input type="text" name="name" id="name"
+                            class="px-2 py-3 bg-[#13131807] w-full  rounded-lg outline-theme"
+                            placeholder="Enter your full name">
                     </div>
-                    <div class="flex flex-col gap-4" >
+                    <div class="flex flex-col gap-4">
                         <label class="font-bold text-black-title text-lg" for="email">Your Email</label>
-                        <input type="text" name="email" id="email" class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme" placeholder="Enter your email">
+                        <input type="text" name="email" id="email"
+                            class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme"
+                            placeholder="Enter your email">
                     </div>
                     <div class="flex flex-col gap-4">
                         <label class="font-bold text-black-title text-lg" for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme" placeholder="Enter your subject" >
+                        <input type="text" name="subject" id="subject"
+                            class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme"
+                            placeholder="Enter your subject">
                     </div>
                     <div class="flex flex-col gap-4">
                         <label class="font-bold text-black-title text-lg" for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme" placeholder="Enter your phone number">
+                        <input type="tel" name="phone" id="phone"
+                            class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme"
+                            placeholder="Enter your phone number">
                     </div>
                     <div class="flex flex-col gap-4 lg:col-span-2">
                         <label class="font-bold text-black-title text-lg" for="Message">Message</label>
-                        <textarea name="Message" id="Message" cols="30" rows="10" class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme" placeholder="Enter your phone number"></textarea>
+                        <textarea name="Message" id="Message" cols="30" rows="10"
+                            class="px-2 py-3 bg-[#13131807] w-full rounded-lg outline-theme"
+                            placeholder="Enter your phone number"></textarea>
                     </div>
                     <button class="btn bg-theme text-white  text-xl  col-span-2">
                         Send Message
@@ -610,6 +620,51 @@
 
         </section>
     </main>
+
+    <footer class="flex flex-col items-center md:items-start  text-center md:text-start md:flex-row justify-evenly gap-12 p-2 md:p-10 md:px-20 bg-black-title text-white text-base-content w-[100%] m-0">
+        <aside class="flex-1 flex flex-col gap-3 items-center md:items-start">
+            <h1 class=" text-2xl md:text-3xl font-bold">Get In Touch</h1>
+            <p class="text-[#ffffff99] lg:max-w-[30rem]">Ready to take your hockey experience to the next level?Connect
+                with us today to dive into the exciting world of hockey excellence. Let's lace up and embark on this
+                journey together!</p>
+
+            <div class="flex items-center gap-2 text-[#ffffffcc]">
+                <i class="fa-regular fa-envelope text-theme"></i>
+                <p>hockeys@support.com</p>
+            </div>
+
+            <div class="flex items-center gap-2 text-[#ffffffcc]">
+                <i class="fa-solid fa-phone text-theme"></i>
+                <p>(+62) 123-321-543</p>
+            </div>
+
+        </aside>
+        <div class="flex flex-wrap gap-8 justify-center items-start md:justify-evenly flex-1 text-[#ffffff99] text-center md:text-start">
+            <nav class="flex flex-col gap-2  ">
+                <header class="text-white font-semibold text-lg">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav class="flex flex-col gap-2">
+                <header class="text-white font-semibold text-lg">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <nav class="flex flex-col gap-2">
+                <header class=" text-white font-semibold text-lg">Services</header>
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">Hockeys for kids</a>
+                <a class="link link-hover">Hockeys for Adult</a>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 
